@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: Gitter Listener
+
+management:
+  endpoints:
+    beans:
+      enabled: false
+    web:
+      base-path: /_ah
+      exposure:
+        include: '*'
+
+gitter:
+  community:      comunity
+  token:          token
+  oauth:
+    key:          oauth-key
+    secret:       oauth-secret
+    redirect_url: oauth-redirect-url

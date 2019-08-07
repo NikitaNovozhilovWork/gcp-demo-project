@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: App Engine Chat
+  thymeleaf:
+    enabled: true
+    cache:   false
+    prefix:  classpath:/templates/
+    suffix:  .html
+  cloud:
+    gcp:
+      datastore:
+        namespace: datastore_namespace
+
+management:
+  endpoints:
+    beans:
+      enabled: false
+    web:
+      base-path: /_ah
+      exposure:
+        include: '*'

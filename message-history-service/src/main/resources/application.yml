@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: Gitter History Service
+  cloud:
+    gcp:
+      datastore:
+        namespace: datastore_namespace
+
+management:
+  endpoints:
+    beans:
+      enabled: false
+    web:
+      base-path: /_ah
+      exposure:
+        include: '*'

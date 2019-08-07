@@ -1,0 +1,7 @@
+pluginManagement {
+	repositories {
+		gradlePluginPortal()
+	}
+}
+rootProject.name = 'gcp-demo-project'
+include 'chat-wall', 'gitter-listener', 'message-history-service'
