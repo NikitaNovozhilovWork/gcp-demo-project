@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: Cloud Function Chat
+  thymeleaf:
+    enabled: true
+    cache:   false
+    prefix:  classpath:/templates/
+    suffix:  .html
+  cloud:
+    gcp:
+      spanner:
+        instance-id: spanner_instance
+        database: spanner_database
+
+management:
+  endpoints:
+    beans:
+      enabled: false
+    web:
+      base-path: /_ah
+      exposure:
+        include: '*'

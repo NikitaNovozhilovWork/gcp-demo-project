@@ -1,0 +1,27 @@
+package com.nikitanov.demo.gcp.demoproject.chatwall.controllers;
+
+import com.nikitanov.demo.gcp.demoproject.chatwall.models.dao.GitterMessge;
+import com.nikitanov.demo.gcp.demoproject.chatwall.services.GitterMessageService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.List;
+import java.util.Map;
+
+@RestController
+@RequestMapping("/api")
+public class GitterRestController {
+
+    @Autowired
+    private GitterMessageService gitterMessageService;
+
+    @PostMapping("/history")
+    public List<GitterMessge> getPreviousMessages(@RequestBody Map<String, String> body) throws ParseException {
+        return gitterMessageService.getPreviousByDate(
+                new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSXXX").parse(body.get("from")),
+                Integer.parseInt(body.get("size")));
+    }
+
+}
