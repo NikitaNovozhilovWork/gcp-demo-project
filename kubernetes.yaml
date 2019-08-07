@@ -1,0 +1,76 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: chat-wall
+  name: chat-wall
+spec:
+  type: LoadBalancer
+  ports:
+    - name: http
+      port: 80
+      targetPort: 8080
+  selector:
+    app: chat-wall
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: chat-wall
+  name: chat-wall
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: chat-wall
+  template:
+    metadata:
+      labels:
+        app: chat-wall
+    spec:
+      containers:
+        - name: chat-wall
+          image: gcr.io/gcp-demo-project-235011/chat-wall-kubernetes:0.0.1-SNAPSHOT
+          ports:
+            - name: http
+              containerPort: 8080
+          imagePullPolicy: Always
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: gitter-listener
+  name: gitter-listener
+spec:
+  ports:
+    - name: http
+      port: 80
+      targetPort: 8080
+  selector:
+    app: gitter-listener
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: gitter-listener
+  name: gitter-listener
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gitter-listener
+  template:
+    metadata:
+      labels:
+        app: gitter-listener
+    spec:
+      containers:
+        - name: gitter-listener
+          image: gcr.io/gcp-demo-project-235011/gitter-listener-kubernetes:0.0.1-SNAPSHOT
+          ports:
+            - name: http
+              containerPort: 8080
+          imagePullPolicy: Always
