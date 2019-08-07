@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: Compute Engine Chat
+  thymeleaf:
+    enabled: true
+    cache:   false
+    prefix:  classpath:/templates/
+    suffix:  .html
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url:      jdbc:mysql://host/db?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: user
+    password: password
+
+management:
+  endpoints:
+    beans:
+      enabled: false
+    web:
+      base-path: /_ah
+      exposure:
+        include: '*'
+
+gitter:
+  community:      comunity
+  token:          token
+  oauth:
+    key:          oauth-key
+    secret:       oauth-secret
+    redirect_url: oauth-redirect-url
