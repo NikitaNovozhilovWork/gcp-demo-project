@@ -43,7 +43,7 @@ gcloud pubsub subscriptions create --topic chat-messages chat-messages-updater-s
 and create and config Cloud Spanner instance
 ```
 gcloud spanner instances create gcp-demo-spanner --config=regional-us-central1 --description="GCP demo spanner" --nodes=1
-gcloud spanner databases execute-sql chat-messages --instance=gcp-demo-spanner --sql='CREATE TABLE messages (messageId STRING(MAX) NOT NULL, sent TIMESTAMP NOT NULL, text STRING(MAX) NOT NULL, translation STRING(MAX) NOT NULL, userDisplayName STRING(MAX) NOT NULL, userId STRING(MAX) NOT NULL, userUsername STRING(MAX) NOT NULL) PRIMARY KEY (messageId)'
+gcloud spanner databases create chat-messages --instance=gcp-demo-spanner --ddl='CREATE TABLE messages (messageId STRING(MAX) NOT NULL, sent TIMESTAMP NOT NULL, text STRING(MAX) NOT NULL, translation STRING(MAX) NOT NULL, userDisplayName STRING(MAX) NOT NULL, userId STRING(MAX) NOT NULL, userUsername STRING(MAX) NOT NULL) PRIMARY KEY (messageId)'
 ```
 
 Lets register cloud function
