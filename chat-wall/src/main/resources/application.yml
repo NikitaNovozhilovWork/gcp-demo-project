@@ -1,6 +1,7 @@
 spring:
   application:
     name: Kubernetes Engine Chat
+    icon: /gcp.png
   thymeleaf:
     enabled: true
     cache:   false
