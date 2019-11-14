@@ -1,6 +1,7 @@
 spring:
   application:
     name: Shell Chat
+    icon: /gcp.png
   thymeleaf:
     enabled: true
     cache:   false
