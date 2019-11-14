@@ -1,6 +1,7 @@
 spring:
   application:
     name: Cloud Function Chat
+    icon: /gcp.png
   thymeleaf:
     enabled: true
     cache:   false
