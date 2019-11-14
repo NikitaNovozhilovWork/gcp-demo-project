@@ -11,9 +11,13 @@ public class GitterController {
     @Value("${spring.application.name}")
     private String appName;
 
+    @Value("${spring.application.icon}")
+    private String appIcon;
+
     @GetMapping("/")
     public String homePage(Model model) {
         model.addAttribute("appName", appName);
+        model.addAttribute("appIcon", appIcon);
         return "chat";
     }
 
