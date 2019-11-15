@@ -22,3 +22,21 @@
 2) kubernetes_engine - [http://35.223.186.119/](http://35.223.186.119/)
 3) app_engine - [https://chat-wall-ds-dot-gcp-demo-project-it-subbotnik.appspot.com/](https://chat-wall-ds-dot-gcp-demo-project-it-subbotnik.appspot.com/)
 4) cloud_functions - [https://chat-wall-cs-dot-gcp-demo-project-it-subbotnik.appspot.com/](https://chat-wall-cs-dot-gcp-demo-project-it-subbotnik.appspot.com/)
+
+Ссылки для ознокомления:
+* Google cloud - https://cloud.google.com/​
+* Google cloud products - https://cloud.google.com/products/​
+* Google cloud docs - https://cloud.google.com/docs/​
+* Google CE docs - https://cloud.google.com/compute/​
+* Google KE - https://cloud.google.com/kubernetes-engine/​
+* Cloud SQL - https://cloud.google.com/sql/​
+* Cloud AI & services - https://cloud.google.com/products/ai/​
+* Google App Engine - https://cloud.google.com/appengine/​
+* Cloud datastore - https://cloud.google.com/datastore/​
+* Cloud Pub/Sub - https://cloud.google.com/pubsub/​
+* Cloud spanner - https://cloud.google.com/spanner/​
+* Spanner, TrueTime and the CAP Theorem - https://ai.google/research/pubs/pub45855​
+* Cloud functions - https://cloud.google.com/functions/​
+* Google Cloud Platform Pricing Calculator - https://cloud.google.com/products/calculator/​
+* GitHub Demo project - https://github.com/NikitaNovozhilovWork/gcp-demo-project​
+*add "/docs" at the end of url to see the docs for the google cloud service*
