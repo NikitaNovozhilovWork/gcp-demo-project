@@ -39,4 +39,5 @@
 * Cloud functions - https://cloud.google.com/functions/​
 * Google Cloud Platform Pricing Calculator - https://cloud.google.com/products/calculator/​
 * GitHub Demo project - https://github.com/NikitaNovozhilovWork/gcp-demo-project​
+
 *add "/docs" at the end of url to see the docs for the google cloud service*
