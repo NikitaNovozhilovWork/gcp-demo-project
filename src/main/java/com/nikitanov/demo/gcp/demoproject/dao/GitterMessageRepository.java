@@ -9,6 +9,9 @@ import java.util.*;
 import java.util.concurrent.ConcurrentSkipListMap;
 import java.util.stream.Collectors;
 
+/**
+ * Fake repository, stores data and search data into local map
+ */
 @Repository
 public class GitterMessageRepository {
 

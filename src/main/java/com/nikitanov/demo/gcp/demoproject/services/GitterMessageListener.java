@@ -9,7 +9,11 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.messaging.core.MessageSendingOperations;
 import org.springframework.stereotype.Service;
 
-
+/**
+ * Gitter message listener class to process new messages
+ * from gitterGateway, save into storage through repository
+ * and send them to websocket
+ */
 @Service
 @Slf4j
 @RequiredArgsConstructor

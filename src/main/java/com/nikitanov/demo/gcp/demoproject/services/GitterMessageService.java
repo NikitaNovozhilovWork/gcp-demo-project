@@ -10,6 +10,9 @@ import java.time.ZonedDateTime;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
 
+/**
+ * Service to get historical messages from repository
+ */
 @Slf4j
 @Service
 @RequiredArgsConstructor

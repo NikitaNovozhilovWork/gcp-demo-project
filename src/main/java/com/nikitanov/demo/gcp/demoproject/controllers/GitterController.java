@@ -5,6 +5,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
+/**
+ * UI MVC controller
+ * appName - parameter to display application name in header on ui
+ * appIcon - parameter where to get shortcut icon on ui
+ */
 @Controller
 public class GitterController {
 
