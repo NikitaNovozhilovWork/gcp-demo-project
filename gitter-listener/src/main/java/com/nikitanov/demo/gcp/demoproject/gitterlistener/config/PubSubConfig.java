@@ -5,6 +5,9 @@ import org.springframework.cloud.gcp.pubsub.support.converter.JacksonPubSubMessa
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+/**
+ * Configuration for Google Cloud Pub/Sub
+ */
 @Configuration
 public class PubSubConfig {
 

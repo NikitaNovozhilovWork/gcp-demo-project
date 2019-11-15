@@ -8,6 +8,9 @@ import org.springframework.stereotype.Repository;
 import java.util.Date;
 import java.util.List;
 
+/**
+ * Spring Data repository to work with Cloud Datastore
+ */
 @Repository
 public interface GitterMessageRepository extends PagingAndSortingRepository<GitterMessge, String> {
 

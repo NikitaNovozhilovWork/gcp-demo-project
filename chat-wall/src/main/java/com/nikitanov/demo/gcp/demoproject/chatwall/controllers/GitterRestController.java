@@ -10,6 +10,10 @@ import java.text.SimpleDateFormat;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Message history controller - read messages from service based on
+ * timestamp of previous message and page size
+ */
 @RestController
 @RequestMapping("/api")
 public class GitterRestController {

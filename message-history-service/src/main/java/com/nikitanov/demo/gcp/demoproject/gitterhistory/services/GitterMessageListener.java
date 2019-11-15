@@ -8,6 +8,10 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.cloud.gcp.pubsub.core.PubSubTemplate;
 import org.springframework.stereotype.Service;
 
+/**
+ * Gitter message listener class to process new messages
+ * from Pub/Sub base on subscription and save into database
+ */
 @Service
 @Slf4j
 @RequiredArgsConstructor

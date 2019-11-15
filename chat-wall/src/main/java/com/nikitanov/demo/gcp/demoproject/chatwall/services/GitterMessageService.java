@@ -12,6 +12,9 @@ import java.time.ZonedDateTime;
 import java.util.Date;
 import java.util.List;
 
+/**
+ * Service to get historical messages from repository
+ */
 @Slf4j
 @Service
 @RequiredArgsConstructor

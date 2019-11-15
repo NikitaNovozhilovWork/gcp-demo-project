@@ -1,3 +1,4 @@
+#AppEngine configuration file
 runtime: custom
 env: flex
 service: chat-wall-ds
