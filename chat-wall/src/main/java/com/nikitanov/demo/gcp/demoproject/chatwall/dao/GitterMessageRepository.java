@@ -8,6 +8,9 @@ import org.springframework.stereotype.Repository;
 import java.time.ZonedDateTime;
 import java.util.List;
 
+/**
+ * Spring Data repository to work with Cloud SQL
+ */
 @Repository
 public interface GitterMessageRepository extends PagingAndSortingRepository<GitterMessage, Long> {
 
