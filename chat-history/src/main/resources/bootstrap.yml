@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    gcp:
+      config:
+        name: gitterchat
+        profile: cloudfunctions
+        enabled: true
+        # Config server API timeout in milliseconds, default : 60000 (1 minute)
+        timeout-millis: 120000

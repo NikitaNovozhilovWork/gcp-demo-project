@@ -6,6 +6,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.gcp.pubsub.core.PubSubTemplate;
 import org.springframework.stereotype.Service;
 
+/**
+ * Pub/Sub gateway to send gitter messages to Pub/sub base on topic
+ */
 @Service
 @Slf4j
 @RequiredArgsConstructor

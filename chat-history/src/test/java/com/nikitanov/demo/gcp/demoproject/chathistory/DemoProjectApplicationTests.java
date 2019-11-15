@@ -1,4 +1,4 @@
-package com.nikitanov.demo.gcp.demoproject.gitterhistory;
+package com.nikitanov.demo.gcp.demoproject.chathistory;
 
 import org.junit.Ignore;
 import org.junit.Test;

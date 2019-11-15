@@ -1,8 +1,8 @@
+server.port: ${PORT}
+
 spring:
   application:
     name: Cloud Function Chat
-    icon: /gcp.png
-    historyLink: /api/history
   thymeleaf:
     enabled: true
     cache:   false

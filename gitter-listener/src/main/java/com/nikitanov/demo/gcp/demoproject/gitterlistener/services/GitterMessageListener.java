@@ -8,7 +8,11 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Service;
 
-
+/**
+ * Gitter message listener class to process new messages
+ * from gitterGateway, translate them using translation service
+ * and send to Pub/Sub topic using PubSubGateway
+ */
 @Service
 @Slf4j
 @RequiredArgsConstructor

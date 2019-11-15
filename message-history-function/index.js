@@ -1,3 +1,5 @@
+//Message history function to read new messages from Pub/Sub and store them into Cloud Spanner
+
 'use strict';
 
 // Imports the Google Pub Sub

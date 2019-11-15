@@ -9,7 +9,10 @@ buildscript {
 	dependencies {
 		classpath 'org.springframework.boot:spring-boot-gradle-plugin:2.1.3.RELEASE'
 		classpath 'io.spring.gradle:dependency-management-plugin:1.0.6.RELEASE'
+		//AppEngine gradlde plugin to deploy application to AppEngine
 		classpath 'com.google.cloud.tools:appengine-gradle-plugin:1.3.5'
+		//Jib plugin to build docker image
+		classpath 'gradle.plugin.com.google.cloud.tools:jib-gradle-plugin:1.0.2'
 	}
 }
 

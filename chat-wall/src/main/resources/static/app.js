@@ -28,7 +28,9 @@ function disconnect() {
 }
 
 function history() {
-    $("#history").prop("disabled", true);
+    var historyBtn = $("#history");
+    var historyHref = historyBtn.attr("href");
+    historyBtn.prop("disabled", true);
     var fromDate;
     if ($("#chat > tr").length) {
         fromDate = new Date(Number($("#chat > tr").attr('date'))).toISOString();
@@ -43,7 +45,7 @@ function history() {
         $.ajax({
           type: "POST",
           contentType: "application/json",
-          url: "/api/history",
+          url: historyHref,
           dataType: 'json',
           data: JSON.stringify(request),
           success: function (messages) {
@@ -56,7 +58,7 @@ function history() {
           }
         });
     }
-    $("#history").prop("disabled", false);
+    historyBtn.prop("disabled", false);
 }
 
 function showMessage(message) {

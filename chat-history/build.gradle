@@ -1,0 +1,4 @@
+apply plugin: 'com.google.cloud.tools.jib'
+
+// IMPORTANT: Set the environment variable PROJECT_ID to your own Google Cloud Platform project.
+jib.to.image = "gcr.io/${System.getenv('PROJECT_ID')}/${project.name}-cr:${version}"

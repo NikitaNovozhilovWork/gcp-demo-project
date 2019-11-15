@@ -4,4 +4,4 @@ pluginManagement {
 	}
 }
 rootProject.name = 'gcp-demo-project'
-include 'chat-wall', 'gitter-listener'
+include 'chat-wall', 'gitter-listener', 'chat-history'

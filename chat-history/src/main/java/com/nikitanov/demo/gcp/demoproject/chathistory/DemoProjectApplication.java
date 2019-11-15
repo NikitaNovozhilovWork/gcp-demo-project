@@ -1,11 +1,10 @@
-package com.nikitanov.demo.gcp.demoproject.gitterlistener;
+package com.nikitanov.demo.gcp.demoproject.chathistory;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * The gitter listener application, listening new messages from gitter chat,
- * translate them and send to PubSub topic
+ * The gitter message history application, to load message history from Cloud Spanner
  *
  * @author Nikita Novozhilov
  */

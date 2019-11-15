@@ -34,7 +34,7 @@
 </nav>
 <main role="main">
   <div class="container py-3">
-    <button id="history" type="submit" class="btn btn-outline-secondary btn-lg btn-block" disabled="disabled">Show previous message</button>
+    <button id="history" type="submit" class="btn btn-outline-secondary btn-lg btn-block" disabled="disabled" th:href="${historyLink}">Show previous message</button>
   </div>
   <div class="container">
     <table id="conversation" class="table table-striped">

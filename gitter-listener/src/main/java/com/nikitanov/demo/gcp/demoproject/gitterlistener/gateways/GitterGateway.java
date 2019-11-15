@@ -16,6 +16,9 @@ import static java.lang.String.format;
 import static org.springframework.http.MediaType.APPLICATION_JSON;
 import static org.springframework.web.reactive.function.BodyExtractors.toFlux;
 
+/**
+ * Gitter gateway to read new messages from gitter
+ */
 @Slf4j
 @Service
 @RequiredArgsConstructor

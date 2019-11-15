@@ -1,7 +1,7 @@
-package com.nikitanov.demo.gcp.demoproject.chatwall.dao;
+package com.nikitanov.demo.gcp.demoproject.chathistory.dao;
 
 import com.google.cloud.Timestamp;
-import com.nikitanov.demo.gcp.demoproject.chatwall.models.dao.GitterMessge;
+import com.nikitanov.demo.gcp.demoproject.chathistory.models.dao.GitterMessge;
 import org.springframework.cloud.gcp.data.spanner.repository.query.Query;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.repository.PagingAndSortingRepository;
@@ -10,6 +10,9 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+/**
+ * Spring Data repository to work with Cloud Spanner
+ */
 @Repository
 public interface GitterMessageRepository extends PagingAndSortingRepository<GitterMessge, String> {
 

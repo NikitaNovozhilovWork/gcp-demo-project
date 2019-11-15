@@ -8,6 +8,10 @@ import org.springframework.cloud.gcp.pubsub.core.PubSubTemplate;
 import org.springframework.messaging.core.MessageSendingOperations;
 import org.springframework.stereotype.Service;
 
+/**
+ * Gitter message listener class to process new messages
+ * from Pub/Sub based on subscription and send to websocket
+ */
 @Service
 @Slf4j
 @RequiredArgsConstructor
